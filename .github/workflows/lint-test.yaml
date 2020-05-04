@@ -20,7 +20,7 @@ jobs:
         with:
           installLocalPathProvisioner: true
         # Only build a kind cluster if there are Chart changes to test.
-        if: steps.lint.outputs.changed == 'true'
+        # if: steps.lint.outputs.changed == 'true'
 
       - name: Run chart-testing (install)
         uses: helm/chart-testing-action@v1.0.0-alpha.3
